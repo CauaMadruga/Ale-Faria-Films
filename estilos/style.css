@@ -1,0 +1,272 @@
+@charset "UTF-8";
+   
+   
+   :root {
+            --cor1: rgb(230, 230, 230);
+            --cor2: rgb(190, 190, 190);
+            --cor3: #581a1a;
+            --cor4: rgb(10, 10, 10);
+            --cor5: rgba(128, 128, 128, 0.100);
+
+            --fonte1: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+
+
+
+
+        body {
+            height: 100vh;
+
+            margin: 0px;
+            padding: 0px;
+
+        }
+
+        main {
+            margin: auto;
+            background-color: rgb(255, 255, 255);
+        }
+
+
+
+
+
+
+        .cabecalho {
+            background-image: url(../imagens/header.jpg);
+            background-position: 0px -160px;
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            height: 210px;
+
+            color: rgb(190, 190, 190);
+            text-align: center;
+            text-shadow: 0px 0px 4px black;
+
+            box-shadow: inset 0px 0px 2px 0px black;
+            padding: 1px;
+        }
+
+        .cabecalho > h1 {
+            font-size: 64px;
+            letter-spacing: -20px;
+        }
+
+        .cabecalho > h2 {
+            margin-top: -32px;
+            letter-spacing: 4px;
+        }
+
+        .cabecalho > h3 {
+            margin-top: -22px;
+            letter-spacing: 2px;
+        }
+
+
+
+
+
+
+        .background1 {
+            text-align: center;
+            color: var(--cor4);
+            text-shadow: 0px 0px .5px black;
+            
+            background-color: var(--cor3);
+            box-shadow: inset 0px 0px 2px 0px black;
+
+            padding: 1px;
+        }
+
+        .background1 > h2 {
+            margin-top: 250px;
+            font-weight: lighter;
+        }
+
+        .background1 > h1 {
+            font-size: 54px;
+            margin-top: -20px;
+        }
+
+        .background1 > h3 {
+            font-weight: lighter;
+            margin-top: -30px;
+            margin-bottom: 280px;
+        }
+
+
+        
+
+
+
+        .background2 {
+            font-family: var(--fonte1);
+            text-align: center;
+            color: var(--cor1);
+            text-shadow: 1px 1px 4px  black;
+
+            padding: 1px;
+            background-image: url(../imagens/backgound-1.jpg);
+            background-size: cover;
+            background-position: top center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            box-shadow: inset 0px 0px 6px 1px black;
+        }
+
+        .background2 > h1 {
+            margin-top: 220px;
+            margin-bottom: 100px;
+        }
+
+        .background2 > p {
+            background-color: var(--cor5);
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 20px;
+
+            text-align: left;
+            width: 300px;
+
+            margin: auto;
+            margin-top: 70px;
+        }
+
+        .background2 > p#ultimo-paragrafo {
+            margin-bottom: 220px;
+        }
+
+
+
+
+
+
+        .background3 {
+            background-color: var(--cor3);
+            box-shadow: inset 0px 0px 2px 0px black;
+
+            padding: 1px;
+
+            font-family: var(--fonte1);
+            color: var(--cor4);
+            text-align: center;
+            text-shadow: 0px 0px .5px black;
+        }
+
+        .background3 > h1 {
+            margin-top: 150px;
+            margin-bottom: 140px;
+
+            text-decoration: underline;
+        }
+
+        .background3 > h2 {
+            background-color: rgba(80, 80, 80, 0.500);
+            border-radius: 10px;
+            border: 1px solid black;
+
+            width: 240px;
+            padding: 6px;
+            margin: auto;
+            margin-bottom: 20px;
+        }
+
+        .background3 > p {
+            background-color: var(--cor5);
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 20px;
+
+            margin: auto;
+            margin-bottom: 100px;   
+
+            width: 300px;
+            text-align: left;
+        }
+
+        .background3 > p#ultimo-paragrafo {
+            margin-bottom: 220px;
+        }
+
+
+
+
+
+
+        .background4 {
+            background-image: url(../imagens/background-2.jpg);
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            box-shadow: inset 0px 0px 6px 1px black;
+
+            padding: 1px;
+
+            font-family: var(--fonte1);
+            text-align: center;
+            text-shadow: 0px 0px .5px black;
+            color: var(--cor1);
+        }
+
+        .background4 > h1 {
+            width: 300px;
+
+            margin: auto;
+            margin-top: 140px;
+            margin-bottom: 140px;
+        }
+
+        .background4 > h2 {
+            background-color: rgba(0, 0, 0, 0.600);
+            border: 1px solid black;
+            border-radius: 20px;
+
+            width: 300px;
+            padding: 4px;
+
+            margin: auto;
+            margin-top: 100px;
+        }
+
+        .background4 > p {
+            background-color: var(--cor5);
+            border: 1px solid black;
+            border-radius: 20px;
+
+            text-align: left;
+            width: 300px;
+            padding: 10px;
+
+            margin: auto;
+            margin-top: 20px;
+        }
+
+
+        .background4 #botao {
+            background-color: var(--cor3);
+            width: 200px;
+            padding: 10px;
+            border: 1px solid white;
+            border-radius: 20px;
+
+            text-align: center;
+            color: var(--cor1);
+            text-decoration: none;
+
+            margin: auto;
+            margin-top: 100px;
+            margin-bottom: 120px;
+        }
+
+        .background4 a {
+            text-decoration: none;
+        }
+
+        .background4 #botao:hover {
+            text-shadow: 0px 0px 1px white;
+            box-shadow: 0px 0px 2px 0px white;
+            transition: .3s;
+        }

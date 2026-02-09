@@ -4,238 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ale Faria - Films</title>
-    <style>
-        body {
-            height: 100vh;
-
-            margin: 0px;
-            padding: 0px;
-        }
-
-        main {
-            margin: auto;
-            background-color: rgb(255, 255, 255);
-            box-shadow: 1px 1px 20px 1px black;
-        }
-
-        .cabecalho {
-            background-image: url(imagens/header.jpg);
-            background-position: 0px -210px;
-            background-size: cover;
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-
-            color: rgb(190, 190, 190);
-            text-align: center;
-            height: 150px;
-            box-shadow: inset 0px 0px 2px 0px black;
-        }
-
-        #background1 {
-            height: 700px;
-        }
-
-        #logo {
-            margin: 0px;
-            font-size: 64px;
-            letter-spacing: -22px;
-            text-align: center;
-            text-shadow: 0px 0px 1px rgb(0, 0, 0);
-        }
-
-        #titulo-logo {
-            margin-top: 4px;
-            letter-spacing: 4px;
-            text-decoration: underline;
-            text-align: center;
-            text-shadow: 0px 0px 1px rgb(0, 0, 0);
-        }
-
-        #subtitulo-logo {
-            margin-top: -24px;
-            text-shadow: 0px 0px 1px rgb(0, 0, 0);
-        }
-
-        #portfolio {
-            text-align: center;
-            font-size: 34px;
-            margin-top: 210px;
-            text-shadow: 0px 0px 1px rgb(0, 0, 0);
-        }
-
-        #titulo-portfolio {
-            text-align: center;
-            margin-top: -32px;
-            font-size: 70px;
-            text-shadow: 0px 0px 1px rgb(0, 0, 0);
-        }
-
-        #descricao-portfolio {
-            text-align: center;
-            width: 310px;
-            margin: auto;
-            font-size: 16px;
-            margin-top: -44px;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
-        }
-
-        .background1, .background3 {
-            background-color: #581a1a;
-            height: 700px;
-            padding: 1px;
-            box-shadow: inset 0px 0px 2px 0px black;
-        }
-
-        .background2, .background4 {
-            height: 700px;
-            padding: 1px;
-            color: white;
-        }
-
-        .background2 h1 {
-            text-align: center;
-            margin-top: 60px;
-            margin-bottom: 90px;
-            text-shadow: 4px 4px 8px black;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        }
-
-        .background2 p {
-            width: 310px;
-            margin: auto;
-            padding: 20px;
-            text-shadow: 4px 4px 8px black;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        }
-
-        .background3 h1 {
-            text-align: center;
-            margin-top: 40px;
-            margin-bottom: 60px;
-            text-shadow: 0px 0px 2px rgb(0, 0, 0);
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            text-decoration: underline;
-        }
-
-        .background3 h2 {
-            text-align: center;
-            text-shadow: 0px 0px 2px rgb(0, 0, 0);
-            margin-top: 30px;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        }
-
-        .background3 p {
-            font-size: 17px;
-            width: 310px;
-            margin: auto;
-            margin-top: -20px;
-            margin-bottom: 40px;
-            padding: 20px;
-            text-shadow: 0px 0px 1px black;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        }
-
-        #background3 {
-            height: 1200px;
-        }
-
-        .background4 {
-            text-align: center;
-        }
-
-        .background4 h1 {
-            text-shadow: 4px 4px 8px black;
-            text-decoration: underline;
-            font-size: 26px;
-            width: 310px;
-            margin: auto;
-            margin-top: 10px;
-            margin-bottom: 70px;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        }
-
-        .background4 h2 {
-            text-shadow: 4px 4px 8px black;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        }
-
-        .background4 p {
-            font-size: 17px;
-            width: 310px;
-            margin: auto;
-            margin-top: -20px;
-            margin-bottom: 40px;
-            padding: 20px;
-            text-shadow: 4px 4px 8px black;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        }
-        
-        #imagem1 {
-            background-image: url(imagens/backgound-1.jpg);
-            background-size: cover;
-            background-position: top center;
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-            box-shadow: inset 0px 0px 6px 1px black;
-            height: 1000px;
-        }
-
-        #imagem2 {
-            background-image: url(imagens/background-2.jpg);
-            background-size: cover;
-            background-position: center center;
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-            box-shadow: inset 0px 0px 6px 1px black;
-            height: 1300px;
-        }
-
-        #botao {
-            background-color: #581a1a;
-            text-align: center;
-            width: 300px;
-            margin: auto;
-            margin-top: -20px;
-            border-radius: 40px 40px 40px 40px;
-            box-shadow: 1px 1px 4px 1px black;
-        }
-
-        #botao > h1 {
-            text-indent: -16px;
-            text-align: center;
-            padding: 6px;
-            text-shadow: 1px 1px 3px black;
-            color: rgb(200, 200, 200);
-            text-decoration: none;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        }
-
-        a {
-            text-decoration: none;
-        }
-
-        #botao:hover {
-            box-shadow: 0px 0px 8px 0px rgb(200, 200, 200);
-            transition: .4s;
-        }
-
-        #botao > h1:hover {
-            text-shadow: 0px 0px 1px rgb(200, 200, 200);
-            transition: .4s;
-        }
-    </style>
+    <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
     <main>
         <section class="cabecalho">
-            <h1 id="logo">AF</h1>
-            <h2 id="titulo-logo">ALE FARIA</h2>
-            <h3 id="subtitulo-logo">FILMS</h3>
+            <h1>AF</h1>
+            <h2>ALE FARIA</h2>
+            <h3>FILMS</h3>
         </section>
         <section class="background1" id="background1">
-            <h2 id="portfolio">PORTFÓLIO</h2>
-            <h1 id="titulo-portfolio">ALE FARIA</h1>
-            <h3 id="descricao-portfolio">TRANSFORMANDO IDEIAS EM VÍDEOS QUE CONECTAM, ENGAJAM E CONTAM HISTÓRIAS</h3>
+            <h2>PORTFÓLIO</h3>
+            <h1>ALE FARIA</h1>
+            <h3>TRANSFORMANDO IDEIAS EM VÍDEOS QUE CONECTAM, ENGAJAM E CONTAM HISTÓRIAS</h3>
         </section>
         <section class="background2" id="imagem1">
             <h1>OIÊ, <br> EU SOU A ALE.</h1>
@@ -248,7 +29,7 @@ propósito. Hoje, sou apaixonada por criar, pensar e
 desenvolver ideias, usando a criatividade para transformar
 conceitos em conteúdo visual de alto impacto, que comunica,
 envolve e conecta pessoas.</p>
-                    <p>Acredito no poder do audiovisual como ferramenta de
+                    <p id="ultimo-paragrafo">Acredito no poder do audiovisual como ferramenta de
 expressão, storytelling e estratégia. Cada vídeo que produzo
 carrega intenção, emoção e identidade, sempre buscando unir
 estética, narrativa e resultado.</p>
@@ -271,7 +52,7 @@ marca e criar materiais que
 possam ser usados em
 divulgação e redes sociais.</p>
             <h2>ESPORTIVO</h2>
-            <p>Criação de conteúdos
+            <p id="ultimo-paragrafo">Criação de conteúdos
 dinâmicos e criativos
 voltados para o esporte, com
 foco em performance, treino
@@ -287,28 +68,29 @@ público</p>
         <section class="background4" id="imagem2">
             <h1>COMO FUNCIONA A CONTRATAÇÃO DOS MEUS SERVIÇOS</h1>
             <h2>PRIMEIRO CONTATO</h2>
-            <p>O cliente envia as informações do serviço: <br> tipo de evento, objetivo e ideia desejada</p>
+            <p>O cliente envia as informações do serviço: tipo de evento, objetivo e ideia desejada</p>
             <h2>APRESENTAÇÃO DO MEU TRABALHO</h2>
             <p>Caso ainda não me conheça, envio meu
-portfólio <br> e redes sociais para apresentar
+portfólio e redes sociais para apresentar
 meu estilo e qualidade.</p>
             <h2>ORÇAMENTO</h2>
             <p>Os valores são definidos com base em
-tempo de serviço, <br> duração, distância,
+tempo de serviço, duração, distância,
 data e tipo de produção.</p>
             <h2>DIA DO EVENTO</h2>
             <p>Capto os melhores momentos com
-criatividade, <br> atenção e olhar
+criatividade, atenção e olhar
 profissional.</p>
             <h2>ENTREGA</h2>
             <p>Para serviços de videomaker, o
-aftermovie <br> é entregue em até 15 dias
+aftermovie é entregue em até 15 dias
 após o evento.</p>
-    <a href="#" target="_blank">
-        <section id="botao">
-                <h1>ENTRAR EM CONTATO</h1>
-            </section>
-    </a>
+
+                 <a href="#">
+                     <p id="botao">
+                            ENTRAR EM CONTATO
+                     </p>
+                 </a>
         </section>
     </main>
 </body>
